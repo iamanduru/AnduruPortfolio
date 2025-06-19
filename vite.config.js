@@ -3,9 +3,9 @@ import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  base: '/anduruPortfolio/',    // ← EXACTLY your repo name, case-sensitive
+  base: '/anduruPortfolio/',    // ← your exact repo name, case-sensitive
   build: {
-    outDir: 'dist',             // ← this is the folder we'll publish
+    outDir: 'docs',             // ← this makes Vite spit files into /docs
   },
   plugins: [tailwindcss()],
 })
